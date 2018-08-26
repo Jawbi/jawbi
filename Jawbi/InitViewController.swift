@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InitViewController.swift
 //  Jawbi
 //
 //  Created by Alex Schultz on 8/26/18.
@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
+        let logoView = UIImageView(image: UIImage(named: "Logo"))
+        logoView.frame = CGRect(x: self.view.frame.size.width / 2 - 277 / 2, y: self.view.frame.size.height / 2 - 104 / 2, width: 277, height: 104)
+        view.addSubview(logoView)
 
         // Do any additional setup after loading the view.
     }
